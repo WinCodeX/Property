@@ -1,0 +1,17 @@
+<% if current_account %>
+          <li class="nav-item">
+           <a class="nav-link" href="\accounts\sign_out">Sign out</a>
+           </li>
+           <li class="nav-item">
+           <a class="nav-link" href="\accounts\sign_out">Dashboard</a>
+           </li>
+           <% else %>
+          <li class="nav-item">
+          <a class="nav-link" href="\accounts\sign_in">Sign in</a>
+           </li>
+
+          <li class="nav-item">
+           <a class="nav-link" href="\accounts\sign_up">Register</a>
+           </li>
+           
+        <% end %>
